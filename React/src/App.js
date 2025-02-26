@@ -10,6 +10,7 @@ function App() {
     const fetchData = async () => {
       try {
         const response = await axios.get("http://localhost:3000");
+        console.log(response);
         setData(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -35,9 +36,9 @@ function App() {
                 By: <a href={story.writerProfile}>{story.writer}</a>
               </p>
               <p>
-                <span className="tag_completion">
+                {/* <span className="tag_completion">
                   {story.completed && "Complete"}
-                </span>
+                </span> */}
                 <span className="tag_mature">{story}</span>
               </p>
             </div>

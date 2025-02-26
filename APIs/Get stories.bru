@@ -1,0 +1,25 @@
+meta {
+  name: Get stories
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://www.wattpad.com/v4/stories?fields=stories(id,user(name,avatar,fullname),title,cover,cover_requires_opt_in,description,mature,completed,voteCount,readCount,categories,url,numParts,rankings,firstPartId,tags,isPaywalled,paidModel),nextUrl,total&filter=new&language=1&limit=20&mature=1&query=haseenamallik&offset=20
+  body: none
+  auth: none
+}
+
+query {
+  fields: stories(id,user(name,avatar,fullname),title,cover,cover_requires_opt_in,description,mature,completed,voteCount,readCount,categories,url,numParts,rankings,firstPartId,tags,isPaywalled,paidModel),nextUrl,total
+  filter: new
+  language: 1
+  limit: 20
+  mature: 1
+  query: haseenamallik
+  offset: 20
+}
+
+headers {
+  authorization: IwKhVmNM7VXhnsVb0BabhS
+}

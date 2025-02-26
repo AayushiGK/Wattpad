@@ -1,10 +1,17 @@
 const express = require("express");
 const axios = require("axios");
 const cors = require("cors");
+require("dotenv").config();
+
+const corsOptions = {
+  origin: "*", // Allow all origins (not recommended for production)
+  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  allowedHeaders: "Content-Type,Authorization",
+};
 
 const app = express();
 const port = 3000;
-app.use(cors());
+app.use(cors(corsOptions));
 
 // Function to fetch all stories from a given URL
 async function fetchAllStories(baseUrl) {
@@ -19,7 +26,7 @@ async function fetchAllStories(baseUrl) {
 
       const response = await axios.get(url, {
         headers: {
-          authorization: process.env.AUTH_TOKEN,
+          authorization: process.env.AUTH_TOKEN || "IwKhVmNM7VXhnsVb0BabhS",
         },
       });
 
