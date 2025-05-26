@@ -1,0 +1,41 @@
+.dashboard {
+    margin: 35px;
+}
+
+.story-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-stories,
+.new-updates,
+.fav-stories {
+    margin-top: 80px;
+}
+
+.recent-update {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    height: 500px;
+}
+
+.recent-update-grid {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.recent-update-data {
+    margin: 25px 0;
+}
+
+.recent-update-notification {
+    display: block;
+    padding: 15px 25px;
+    text-align: left;
+}
+
+.recent-update-image {
+    display: block;
+}

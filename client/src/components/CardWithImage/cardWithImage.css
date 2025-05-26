@@ -1,0 +1,38 @@
+.card-with-image {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 18%;
+
+}
+
+.story-image {
+    width: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 8px;
+
+}
+
+.story-details {
+    margin: 0;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+}
+
+.story-name {
+    margin: 5px 0;
+}
+
+.story-author,
+.story-context {
+    margin: 0;
+    padding: 5px 0;
+    font-size: 14px;
+
+}
+
+.story-context {
+    font-size: 12px;
+    color: grey;
+}
